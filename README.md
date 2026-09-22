@@ -1,4 +1,4 @@
-# Kennel — Issue Tracker & Feedback
+# Kennel - Issue Tracker & Feedback
 
 > [!NOTE]
 > This repository serves strictly as the **public issue tracker and feature request forum** for **Kennel**. This repository does not contain the application source code.
@@ -9,7 +9,7 @@
 
 **Kennel** is an analytics platform designed to help software engineers discover and resolve security, dependency, and lifecycle issues in software containers. 
 
-It inspects sofware container images (OCI), automatically selects optimal SBOM generators based on target directories, cross-references findings against public vulnerability databases, and synthesizes complex security data into an intuitive dashboard.
+It inspects sofware container images (OCI), automatically selects optimal SBOM generators based on target directories, cross-references findings against public vulnerability databases (OSV), and synthesizes complex security data into an intuitive dashboard.
 
 ### Core Features
 
