@@ -1,9 +1,5 @@
 # Kennel — Issue Tracker & Feedback
 
-[![Issues](https://img.shields.io/github/issues-raw/your-org/kennel-issues?color=00DC82)](https://github.com/your-org/kennel-issues/issues)
-[![Nuxt](https://img.shields.io/badge/Nuxt-00DC82?logo=nuxt.js)](https://nuxt.com)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue.svg)](https://www.typescriptlang.org)
-
 > [!NOTE]
 > This repository serves strictly as the **public issue tracker and feature request forum** for **Kennel**. This repository does not contain the application source code.
 
@@ -11,14 +7,17 @@
 
 ## About Kennel
 
-**Kennel** is a web-based application for analyzing Software Bill of Materials (SBOM) for Docker container images. It allows users to request container analyses via backend engines and visualizes security, dependency, and software metadata in a responsive dashboard.
+**Kennel** is an analytics platform designed to help software engineers discover and resolve security, dependency, and lifecycle issues in software containers. 
+
+It inspects sofware container images (OCI), automatically selects optimal SBOM generators based on target directories, cross-references findings against public vulnerability databases, and synthesizes complex security data into an intuitive dashboard.
 
 ### Core Features
 
-- **SBOM Analysis**: Request and process Software Bill of Materials for Docker container images.
-- **Visual Dashboard**: Graphical display of analysis results, vulnerability reports, and dependency trees.
-- **Backend Integration**: Native proxy integration with analysis backends.
-- **Modern Stack**: Built with Nuxt 4, Nuxt UI 4, TypeScript, and Tailwind CSS 4.
+- **Container Image Analysis**: Inspects Docker software container images to extract deep dependency trees and software metadata.
+- **Smart SBOM Generation**: Evaluates container directories to select and run best-of-breed SBOM generators tailored to the detected tech stack.
+- **OSV Vulnerability Matching**: Cross-references generated SBOM components against the Open Source Vulnerability (OSV) database to flag known security flaws.
+- **End of Life (EOL) Reporting**: Optionally identifies outdated or unsupported components and generates lifecycle status reports.
+- **Intuitive Analytics Dashboard**: Boils down raw SBOM, vulnerability, and EOL metrics into a clean, actionable view for engineers.
 
 ---
 
@@ -30,9 +29,9 @@ We use this repository to track bugs, performance improvements, and user request
 1. **Search existing issues**: Check the [Issues](../../issues) tab to see if your bug or request has already been logged.
 2. **Provide context**: When reporting a bug, please include:
    - Reproduction steps
-   - Target Docker image name/tag (if applicable)
-   - Browser version / OS
-   - Screenshots or error logs
+   - Target container image name/tag (if applicable)
+   - Expected vs. actual behavior
+   - Screenshots or relevant logs
 
 ---
 
@@ -42,8 +41,8 @@ The core **Kennel** codebase is maintained in a private repository.
 
 If you require access to the source code for development, security auditing, or contribution purposes:
 
-1. **Request an Invitation**: Send an email to **[your-email@example.com](mailto:your-email@example.com)** or open an issue tagged `access-request`.
-2. **Provide Details**: State your GitHub username, organization, and purpose for the request.
+1. **Request an Invitation**: Send an email to **[kennel@blueshoe.io](mailto:kennel@blueshoe.io)**.
+2. **Provide Details**: State your GitHub username, organization, and the purpose of your request.
 3. **Invitation**: Once approved, an official invitation to the private codebase repository will be dispatched to your GitHub account.
 
 ---
